@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings Widget</title>
+    <link rel="stylesheet" href=".css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-[#f0f0f0] flex justify-center items-center min-h-screen">
+    <section class="flex gap-[20px] items-center">
+      <articles class="">
+        <div
+          class="bg-white text-right w-[40px] p-[10px] mb-[5px] float-right rounded cursor-pointer"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 448 512"
+          >
+            <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+            <path
+              d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"
+            />
+          </svg>
+        </div>
+        <div class="bg-white clear-right p-[15px] rounded shadow-lg
+          <p class="text-[10px] p-[10px] hover:bg-gray-100 cursor-pointer">
+            Edit your list
+          </p>
+          <p class="text-[10px] p-[10px] hover:bg-gray-100 cursor-pointer">
+            Account settings
+          </p>
+          <p class="text-[10px] p-[10px] hover:bg-gray-100 cursor-pointer">
+            View your profile
+          </p>
+        </div>
+      </articles>
+      <articles>
+        <div class="bg-white p-[30px] mb-[5px] rounded shadow-lg shadow-lg">
+          <h6 class="font-bold mb-[20px] text-[13px]">Customize your widget</h6>
+          <div class="flex items-center gap-[5px] my-[5px]">
+            <input
+              type="radio"
+              name=""
+              id="dcb"
+              class="checked:bg-[#e8a830] cursor-pointer"
+            />
+            <label for="dcb" class="text-[10px] cursor-pointer"
+              >Display Contact button</label
+            >
+          </div>
+          <div class="flex items-center gap-[5px] my-[5px]">
+            <input
+              type="radio"
+              name=""
+              id="hea"
+              class="checked:bg-[#e8a830] cursor-pointer"
+            />
+            <label for="hea" class="text-[10px] cursor-pointer"
+              >Hide email address</label
+            >
+          </div>
+          <div class="flex items-center gap-[5px] my-[5px]">
+            <input
+              type="radio"
+              name=""
+              id="dpb"
+              class="checked:bg-[#e8a830] cursor-pointer"
+            />
+            <label for="dpb" class="text-[10px] cursor-pointer"
+              >Display Publish button</label
+            >
+          </div>
+          <div class="flex gap-[10px] items-center mt-[20px]">
+            <button
+              class="px-[30px] py-[5px] text-[10px] rounded bg-gray-100 cursor-pointer"
+            >
+              Cancel
+            </button>
+            <button
+              class="px-[30px] py-[5px] text-[10px] rounded bg-[#e8a830] cursor-pointer"
+            >
+              Save
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="bg-white py-[30px] pl-[20px] pr-[50px] mt-[40px] rounded translate-x-[20px] shadow-lg"
+        >
+          <h6 class="font-bold mb-[20px] text-[13px]">Other</h6>
+          <div class="flex items-center gap-[5px] my-[5px] cursor-pointer">
+            <input
+              type="radio"
+              name=""
+              id="turn-on"
+              class="checked:bg-[#e8a830]"
+            />
+            <label for="turn-on" class="text-[10px]"
+              >Turn on in-app notifications.</label
+            >
+          </div>
+          <div class="flex items-center gap-[5px] my-[5px] cursor-pointer">
+            <input
+              type="radio"
+              name=""
+              id="receive-weekly"
+              class="checked:bg-[#e8a830] rounded"
+            />
+            <label for="receive-weekly" class="text-[10px]"
+              >Receive weekly newsletters and other offers.</label
+            >
+          </div>
+        </div>
+      </articles>
+    </section>
+  </body>
+</html>
